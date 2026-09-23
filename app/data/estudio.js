@@ -5,7 +5,7 @@ export const SITE_URL =
 export const estudio = {
   nombre: "Sonido Central",
   ciudad: "Madrid",
-  email: "hola@sonidocentral.com",
+  email: "sonidocentralinfo@gmail.com",
   telefono: "+34 000 000 000",
   direccion: "Barrio de Acacias (Embajadores), Madrid",
   horario: "Sesiones con cita previa, de lunes a viernes.",
