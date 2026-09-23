@@ -1,0 +1,8 @@
+Aqui van las fotos del equipo.
+
+- Formato vertical 4:5 (por ejemplo 1200 x 1500 px)
+- JPG optimizado, por debajo de 400 KB
+- Nombres sin acentos ni espacios: luis.jpg, nombre2.jpg, nombre3.jpg
+
+Despues abre app/data/equipo.js y pon la ruta en el campo "foto":
+   foto: "/equipo/luis.jpg"

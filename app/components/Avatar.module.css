@@ -1,0 +1,36 @@
+.avatar {
+  /* El tamaño llega desde el componente para poder reutilizarlo */
+  width: var(--avatar-size, 160px);
+  height: var(--avatar-size, 160px);
+  border-radius: 50%;
+  overflow: hidden;
+  flex: 0 0 auto;
+
+  display: grid;
+  place-items: center;
+
+  /* Ajusta estos dos al color de fondo y al acento del estudio */
+  background: #1b1b1f;
+  color: #e8e6e1;
+
+  /* Aro fino: separa el círculo del fondo sin pesar */
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.iniciales {
+  /* Proporcional al círculo: las iniciales no se descuadran al cambiar size */
+  font-size: calc(var(--avatar-size, 160px) * 0.34);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  /* Compensa el peso visual de la mayúscula dentro del círculo */
+  transform: translateY(0.02em);
+  user-select: none;
+}
