@@ -6,12 +6,8 @@ export const estudio = {
   nombre: "Sonido Central",
   ciudad: "Madrid",
   email: "sonidocentralinfo@gmail.com",
-  telefono: "+34 000 000 000",
+  telefono: "+34 910 62 66 67",
   direccion: "Barrio de Acacias (Embajadores), Madrid",
   horario: "Sesiones con cita previa, de lunes a viernes.",
-  redes: [
-    { nombre: "Instagram", url: "#" },
-    { nombre: "YouTube", url: "#" },
-    { nombre: "Spotify", url: "#" },
-  ],
+  redes: [],
 };

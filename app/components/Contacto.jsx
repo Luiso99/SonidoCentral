@@ -112,14 +112,21 @@ export default function Contacto() {
           <div className="info-block">
             <p className="k">Redes</p>
             <p className="v">
-              {estudio.redes.map((r, i) => (
-                <span key={r.nombre}>
-                  {i > 0 && "\u00a0 "}
-                  <a href={r.url} target="_blank" rel="noreferrer">
-                    {r.nombre}
-                  </a>
-                </span>
-              ))}
+              {estudio.redes.length > 0 && (
+            <div className="info-block">
+              <p className="k">Redes</p>
+              <p className="v">
+                {estudio.redes.map((r, i) => (
+                  <span key={r.nombre}>
+                    {i > 0 && "\u00a0 "}
+                    <a href={r.url} target="_blank" rel="noreferrer">
+                      {r.nombre}
+                    </a>
+                  </span>
+                ))}
+              </p>
+            </div>
+          )}
             </p>
           </div>
         </div>

@@ -25,7 +25,6 @@ export default function Equipo() {
               ) : (
                 <>
                   <span className="initials">{m.iniciales}</span>
-                  <span className="ph-tag">Foto pendiente</span>
                 </>
               )}
             </div>
