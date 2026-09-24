@@ -143,7 +143,8 @@ h2.title{
 /* ---------- HERO ---------- */
 .hero{
   position:relative;min-height:100svh;display:flex;flex-direction:column;
-  justify-content:flex-end;padding:0 var(--gut) 0;overflow:hidden;
+  justify-content:flex-end;overflow:hidden;
+  padding:clamp(88px,13vh,130px) var(--gut) 0;
 }
 .hero-layer{position:absolute;inset:-15% 0 -15%;pointer-events:none;will-change:transform}
 .hero-rings{
@@ -163,7 +164,7 @@ h2.title{
 .hero-inner{position:relative;z-index:2;padding-bottom:clamp(40px,9vh,90px);max-width:1180px}
 .hero h1{
   font-family:var(--font-display);font-weight:900;text-transform:uppercase;
-  font-size:clamp(44px,13vw,196px);line-height:.83;letter-spacing:-.035em;margin:26px 0 0;
+    font-size:clamp(40px, min(13vw, 17.5vh), 196px);line-height:.83;letter-spacing:-.035em;margin:26px 0 0;
   overflow-wrap:break-word;
 }
 .hero h1 .sep{display:block;color:var(--red)}
