@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { equipo } from "../data/equipo";
 
 export default function Equipo() {
@@ -18,27 +19,25 @@ export default function Equipo() {
 
       <div className="crew">
         {equipo.map((m, i) => (
-          <article key={m.nombre} className={`member rv${i ? ` d${i}` : ""}`}>
+          <Link
+            key={m.slug}
+            href={`/equipo#${m.slug}`}
+            className={`member rv${i ? ` d${i}` : ""}`}
+          >
             <div className="portrait">
               {m.foto ? (
                 <Image src={m.foto} alt={m.nombre} width={1200} height={1500} />
               ) : (
-                <>
-                  <span className="initials">{m.iniciales}</span>
-                </>
+                <span className="initials">{m.iniciales}</span>
               )}
             </div>
             <div className="member-body">
               <p className="role">{m.rol}</p>
               <h3>{m.nombre}</h3>
               <p>{m.bio}</p>
-              <div className="tags">
-                {m.etiquetas.map((t, j) => (
-                  <span key={`${m.nombre}-${j}`}>{t}</span>
-                ))}
-              </div>
+              <span className="area-mas">Ver perfil y escuchar →</span>
             </div>
-          </article>
+          </Link>
         ))}
       </div>
     </section>

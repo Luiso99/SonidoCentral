@@ -12,5 +12,6 @@ export default function sitemap() {
       lastModified: ahora,
       priority: 0.8,
     })),
+    { url: `${SITE_URL}/equipo`, lastModified: ahora, priority: 0.7 },
   ];
 }
