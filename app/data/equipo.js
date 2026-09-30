@@ -57,7 +57,7 @@ export const equipo = [
       "Soy Raúl Villarrubia, ingeniero de mezcla y mastering, productor, artista y compositor multiinstrumentista. Llevo casi 10 años creando música, a mis espaldas tengo 2 álbumes y singles autoproducidos, 6 años de mezcla y mastering para proyectos de artistas, y colaboraciones en proyectos audiovisuales, como bandas sonoras de cortos cinematográficos y postproducción de un corto animado.", 
       "Mi especialidad es el área de Mezcla y Mastering para medios digitales, al ser yo mismo un artista, he ido desarrollando un enfoque particular sobre como abordo este proceso, mi forma de trabajo es: primero buscamos la identidad de la canción, esa esencia que en un primer lugar nos enamora y nos transporta, y a partir de ese momento usamos técnicas avanzadas para llevar la canción al máximo nivel sonoro que esperan las plataformas, mientras conservamos la visión y alma original.", 
       "En cuanto a producción, tengo un grado y un máster en Music Production por la escuela CEV, toco el piano, la guitarra, el bajo y canto. Mi forma de consumir música me ha llevado a ser un creador muy versátil en cuanto a géneros, he producido reggae, afrobeat, rock, funk, soul, indie, synthwave y pop. Te invito a que escuches los ejemplos que encontrarás más adelante para que puedas escuchar que puedo aportar a tu proyecto.",
-      "Mi filosofía de trabajo es:\"Si lo podemos imaginar, puedo hacerlo sonar\"."
+      "Mi filosofía de trabajo es: \"Si lo podemos imaginar, puedo hacerlo sonar\"."
     ],
     etiquetas: ["Mezcla", "Masterización", "Composición"],
     escuchas: [
