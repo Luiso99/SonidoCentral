@@ -11,7 +11,7 @@ export const equipo = [
     nombre: "Luis Lubén",
     iniciales: "LL",
     rol: "Grabación · Mezcla · Masterización",
-    foto: "/equipo/Luis_Foto.jpeg",
+    foto: "/equipo/Luis_Foto.jpg",
     bio: "Cantautor, guitarrista e ingeniero. Producción y mezcla de proyectos de autor con foco en la voz y en que el arreglo respete la canción.",
     bioLarga: [
       "Soy Luis Lubén, cantautor, guitarrista, productor e ingeniero de mezcla. A diferencia de lo que suele pasar, llegué a la producción desde el otro lado: primero fui el que escribía las canciones y las cantaba, y solo después aprendí a grabarlas y mezclarlas. Llevo más de diez años tocando la guitarra, más de diez años trabajando la voz, y desde el 2020 activo en producción y mezcla, y esa doble mirada —la del que está delante del micro y la del que está detrás de la pantalla— es la que traigo a cada sesión.",
@@ -32,7 +32,7 @@ export const equipo = [
     nombre: "Pablo GZ (Costti)",
     iniciales: "GZ",
     rol: "Grabación · Producción · Mezcla en estudio y directo",
-    foto: "/equipo/Pablo_Foto.jpeg",
+    foto: "/equipo/Pablo_Foto.jpg",
     bio: "Productor musical y técnico de sonido con más de siete años de experiencia. Producción, arreglos y mezcla, tanto en estudio como en directo.",
     bioLarga: ["Soy Costti, productor musical, cantante, ingeniero de mezcla y técnico de sonido. Mi relación con la música viene desde pequeño. Crecí en una familia con varios músicos y empecé a tocar el piano y la guitarra desde joven. Con el tiempo, fui llevando esos conocimientos hacia la producción musical, hasta convertirla en mi profesión.",
               "Desde 2019 trabajo en canciones propias y en proyectos de otros artistas, participando en decenas de temas como productor, cantante e ingeniero de mezcla. He estudiado Producción Musical y Sonido y, además, cuento con un máster en Sonorización de Espectáculos en Vivo. Esto me ha permitido desarrollar una visión que va más allá del estudio y entender la música también desde el punto de vista del directo. Durante estos últimos años he trabajado como técnico de sonido en salas, festivales y diferentes tipos de eventos, colaborando con artistas y músicos, especialmente dentro de la escena urbana y el flamenco.",

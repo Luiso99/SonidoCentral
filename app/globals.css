@@ -284,11 +284,13 @@ h2.title{
 .member:hover{border-color:var(--red-deep);transform:translateY(-4px)}
 .portrait{
   aspect-ratio:4/5;position:relative;overflow:hidden;
-  background:linear-gradient(158deg,#1A1D20,#0C0E0F 70%);display:grid;place-items:center;
+  background:linear-gradient(158deg,#1A1D20,#0C0E0F 70%);
+  display:grid;place-items:center;
+  border-bottom:1px solid transparent;
+  transition:border-color .35s ease;
 }
-.portrait img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.08) brightness(.85);
-  transition:filter .5s ease}
-.member:hover .portrait img{filter:grayscale(.15) contrast(1.05) brightness(.95)}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.member:hover .portrait{border-bottom-color:var(--red)}
 .portrait .initials{
   font-family:var(--font-display);font-weight:900;font-size:clamp(46px,5vw,72px);
   color:transparent;-webkit-text-stroke:1px #2A2F33;letter-spacing:-.03em;
@@ -564,13 +566,14 @@ h2.title{
   border:1px solid var(--line-soft);
   background:linear-gradient(158deg,#1A1D20,#0C0E0F 70%);
   display:grid;place-items:center;
+  transition:border-color .35s ease, box-shadow .35s ease;
 }
-.perfil-foto img{width:100%;height:100%;object-fit:cover;
-  filter:grayscale(.9) contrast(1.06) brightness(.92);transition:filter .6s ease}
-.perfil:hover .perfil-foto img{filter:grayscale(.2) contrast(1.04) brightness(1)}
-.perfil-foto .initials{
-  font-family:var(--font-display);font-weight:900;font-size:clamp(52px,6vw,84px);
-  color:transparent;-webkit-text-stroke:1px #2A2F33;letter-spacing:-.03em;
+.perfil-foto img{width:100%;height:100%;object-fit:cover}
+
+/* al pasar por la sección, el marco se enciende */
+.perfil:hover .perfil-foto{
+  border-color:var(--red);
+  box-shadow:0 0 0 1px var(--red), 0 0 30px rgba(var(--red-rgb),.25);
 }
 
 .perfil-datos{margin-top:26px;border-top:1px solid var(--line-soft);padding-top:20px}
@@ -637,4 +640,26 @@ h2.title{
   /* en movil no tiene sentido fijarla: ocuparia toda la pantalla */
   .perfil-lado{position:static;max-width:320px}
   .perfil-lead{max-width:none}
+}
+
+/* ============================================================
+   FOTO DE FONDO del estudio. Viene ya difuminada y oscurecida
+   desde el archivo: sin filter, el navegador no calcula nada
+   en cada fotograma y no da tirones en móvil.
+   ============================================================ */
+.fondo-foto{
+  position:absolute;
+  /* margen generoso arriba y abajo: es el recorrido del parallax.
+     Con poco margen, al moverse asomaría el borde de la imagen. */
+  inset:-32% -4%;
+  pointer-events:none;z-index:0;
+  background-image:url("/Estudio.JPG");
+  background-size:cover;background-position:center;
+  will-change:transform;
+}
+.fondo-velo{
+  position:absolute;inset:0;pointer-events:none;z-index:1;
+  /* sin rojo: aquí manda la foto. El rojo se queda en la cita. */
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.445) 38%, rgba(12, 13, 14, 0.7) 100%);
 }
